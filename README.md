@@ -55,7 +55,7 @@ The integration uses the **Xlink local UDP protocol** on port 5987, reverse-engi
 
 1. Open HACS → Integrations
 2. Click the three-dot menu → **Custom repositories**
-3. Add: `https://github.com/your-github-username/ha-pallight` — Category: **Integration**
+3. Add: `https://github.com/thechancer/pallight` — Category: **Integration**
 4. Click **Download**
 5. Restart Home Assistant
 
@@ -151,7 +151,7 @@ During colour wheel drag, commands are streamed at ~50ms intervals without waiti
 
 - **Brightness is step-only** — the device has no absolute brightness command, only step up/down. The integration approximates HA brightness levels using step counts.
 - **Single saturation level** — the device colour wheel operates at full saturation only. Sending any saturation value produces the same result as 100%.
-- **No white/CCT mode** — the TOUCH-1 is RGB only.
+- **No white/CCT mode** — whilst the remote can generate a white, I have only managed RGB so far...
 
 ---
 
