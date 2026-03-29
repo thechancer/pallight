@@ -1,7 +1,7 @@
 # PalLight LED Controller
 
 [![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
-[![GitHub Release](https://img.shields.io/github/release/thechancer/pallight.svg)](https://github.com/thechanner/pallight/releases)
+[![GitHub Release](https://img.shields.io/github/release/thechancer/pallight.svg)](https://github.com/thechancer/pallight/releases)
 [![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
