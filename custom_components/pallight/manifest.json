@@ -1,0 +1,13 @@
+{
+  "domain": "pallight",
+  "name": "PalLight LED Controller",
+  "version": "1.0.0",
+  "documentation": "https://github.com/your-github-username/ha-pallight",
+  "issue_tracker": "https://github.com/your-github-username/ha-pallight/issues",
+  "requirements": [],
+  "dependencies": ["frontend", "http"],
+  "codeowners": ["@your-github-username"],
+  "iot_class": "local_push",
+  "config_flow": true,
+  "integration_type": "device"
+}

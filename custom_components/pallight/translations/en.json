@@ -1,0 +1,94 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "PalLight \u2014 Discover Device",
+        "description": "Click Submit to auto-discover PalLight devices on your network. Or enter a Device ID (from SZiRain app Settings \u2192 About Device) to search for a specific device.",
+        "data": {
+          "broadcast_ip": "Network interface",
+          "device_id": "Device ID (optional)"
+        },
+        "data_description": {
+          "broadcast_ip": "Interface on the same subnet as the device. Auto works for single-NIC installs.",
+          "device_id": "Leave blank to auto-discover. 32-char hex string, e.g. 985b157bf6fc43368a63467ea3b19d0d"
+        }
+      },
+      "manual": {
+        "title": "Manual Entry",
+        "description": "Discovery did not find device ID {device_id}. Enter the IP and MAC address manually (check your router's DHCP client list).",
+        "data": {
+          "manual_ip": "IP address",
+          "manual_mac": "MAC address"
+        },
+        "data_description": {
+          "manual_ip": "e.g. 192.168.2.7",
+          "manual_mac": "e.g. 98:D8:63:E3:CF:80"
+        }
+      },
+      "name": {
+        "title": "Name Your Device",
+        "description": "Found: {device}\n\nEnter a friendly name for this light. This becomes the entity ID \u2014 {example}.",
+        "data": {
+          "friendly_name": "Friendly name"
+        },
+        "data_description": {
+          "friendly_name": "e.g. Living Room \u2192 light.pallight_living_room"
+        }
+      },
+      "restore_mode": {
+        "title": "Startup Behaviour",
+        "description": "Choose what state the light should be in when Home Assistant restarts.",
+        "data": {
+          "restore_mode": "On restart, apply"
+        }
+      },
+      "device_type": {
+        "title": "Controller Type",
+        "description": "Select the controller type for **{name}** ({device}).",
+        "data": {
+          "device_type": "Controller type"
+        }
+      },
+      "pick_device": {
+        "title": "Select Device",
+        "data": {
+          "device_index": "Device"
+        }
+      }
+    },
+    "error": {
+      "no_devices_found": "Device not found on the network. Check it is powered on and the correct interface is selected. You can enter the IP and MAC manually below.",
+      "invalid_device_id": "Device ID must be a 32-character hex string. Find it in the SZiRain app under Settings \u2192 About Device.",
+      "invalid_ip": "Enter a valid IP address.",
+      "invalid_mac": "Enter a valid MAC address (e.g. 98:D8:63:E3:CF:80).",
+      "name_required": "Enter a name for the device."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "PalLight Options",
+        "data": {
+          "friendly_name": "Friendly name",
+          "scan_interval": "Scan interval (seconds)",
+          "broadcast_ip": "Network interface",
+          "restore_mode": "On restart, apply",
+          "device_type": "Controller type"
+        },
+        "data_description": {
+          "friendly_name": "Changing this renames the entity. Re-add the card if you do.",
+          "scan_interval": "How often to check device connectivity. Minimum 10 s.",
+          "broadcast_ip": "Interface on the device subnet. Auto for single-NIC installs.",
+          "restore_mode": "State applied to the device when HA restarts.",
+          "device_type": "Override the controller type."
+        }
+      }
+    },
+    "error": {
+      "name_required": "Enter a name for the device."
+    }
+  }
+}

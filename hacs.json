@@ -1,0 +1,7 @@
+{
+  "name": "PalLight LED Controller",
+  "render_readme": true,
+  "homeassistant": "2024.1.0",
+  "country": ["AU"],
+  "iot_class": "local_push"
+}
