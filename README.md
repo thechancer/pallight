@@ -37,7 +37,7 @@ No cloud. No vendor app. Full local control over UDP.
 | SZiRain REMOT-8CH | ⚠️ | Same protocol, untested |
 | Any HF-LPB100 / HF-A11 based controller | ⚠️ | Protocol compatible |
 
-The integration uses the **Xlink local UDP protocol** on port 5987, reverse-engineered from pcap captures of the native PalLighting Android app.
+The integration uses the **Xlink local UDP protocol** on port 5987, reverse-engineered from pcap captures of the native PalLighting Android app and a bit of app reverse engineering..
 
 ---
 
