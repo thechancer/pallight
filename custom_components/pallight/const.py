@@ -11,7 +11,7 @@ __version__ = "0.9.0"
 #   0.5.0  Initial release
 # ─────────────────────────────────────────────────────────────────────────────
 
-INTEGRATION_VERSION = "1.0.0"   # Single source of truth — bump here only
+INTEGRATION_VERSION = "1.0.0"   # Overall version - Single source of truth — bump here only
 
 DOMAIN = "pallight"
 
@@ -34,7 +34,7 @@ JSMODULES     = [
 PALLIGHT_DEBUG = False
 
 # ── Network ───────────────────────────────────────────────────────────────────
-# Confirmed from pcap: ALL communication is UDP port 5987, not TCP/48899/8899
+# Confirmed from pcap: ALL communication is UDP port 5987, not TCP/48899/8899 (thats discovery)
 UDP_PORT         = 5987
 DISCOVERY_PORT   = 5987
 DISCOVERY_MSG    = b"HF-A11ASSISTHREAD"   # kept for reference / fallback
