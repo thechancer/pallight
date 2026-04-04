@@ -55,7 +55,7 @@
   // Speed step per button press — sent as brightness_step, integration converts
   // to device speed. 25/255 ≈ 10% per press.
   const SPEED_STEP = 25;
-
+// fairly sure these are still wrong on the colour wheel - needs more work here !
 const PAL_R = [
   0,6,6,6,12,12,18,18,18,24,30,30,30,36,36,42,42,48,
   48,48,54,60,60,60,66,66,72,78,78,78,85,85,91,91,91,97,
