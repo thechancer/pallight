@@ -3,7 +3,7 @@
     "step": {
       "user": {
         "title": "PalLight \u2014 Discover Device",
-        "description": "Click Submit to auto-discover PalLight devices on your network. Or enter a Device ID (from SZiRain app Settings \u2192 About Device) to search for a specific device.",
+        "description": "Click Submit to auto-discover PalLight devices on your network. Or enter a Device ID (if known) to search for a specific device.",
         "data": {
           "broadcast_ip": "Network interface",
           "device_id": "Device ID (optional)"
@@ -22,7 +22,7 @@
         },
         "data_description": {
           "manual_ip": "e.g. 192.168.2.7",
-          "manual_mac": "e.g. 98:D8:63:E3:CF:80"
+          "manual_mac": "e.g. 98:D8:63:E3:CF:77"
         }
       },
       "name": {
@@ -58,7 +58,7 @@
     },
     "error": {
       "no_devices_found": "Device not found on the network. Check it is powered on and the correct interface is selected. You can enter the IP and MAC manually below.",
-      "invalid_device_id": "Device ID must be a 32-character hex string. Find it in the SZiRain app under Settings \u2192 About Device.",
+      "invalid_device_id": "Device ID must be a 32-character hex string.",
       "invalid_ip": "Enter a valid IP address.",
       "invalid_mac": "Enter a valid MAC address (e.g. 98:D8:63:E3:CF:80).",
       "name_required": "Enter a name for the device."
