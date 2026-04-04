@@ -4,7 +4,7 @@
 [![HA Version](https://img.shields.io/badge/Home%20Assistant-2024.1%2B-blue.svg)](https://www.home-assistant.io)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-Local-control Home Assistant integration for **SZiRain / iRainxun PalLighting** Wi-Fi LED controllers — the **TOUCH-1**, **REMOT-8CH**, and compatible devices using the HF-LPB100 / HF-A11 Wi-Fi module.
+Local-control Home Assistant integration for **PalLighting** Wi-Fi LED controllers — tested with the **PCR-4**, and potential use with compatible devices using the HF-LPB100 / HF-A11 Wi-Fi module. This is an older driver, please raise an issue if your device doesn't work or isn't discovered.
 
 No cloud. No vendor app. Full local control over UDP.
 
