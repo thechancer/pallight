@@ -93,8 +93,7 @@ class PalLightConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         Confirmed working from limitlessled_discovery.pcap.
 
         If discovery finds nothing, the form re-shows with an option to
-        enter the device ID (from SZiRain app Settings → About Device)
-        which uses the 41-byte 0x13 search as an alternative.
+        enter the device ID which uses the 41-byte 0x13 search as an alternative.
         """
         errors: dict[str, str] = {}
 
@@ -145,7 +144,7 @@ class PalLightConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 vol.Optional(CONF_DEVICE_ID, default=""): str,
             }),
             description_placeholders={
-                "id_hint": "Leave blank to auto-discover. Or enter the 32-char Device ID from SZiRain app Settings → About Device.",
+                "id_hint": "Leave blank to auto-discover. Or enter the 32-char Device ID if known.",
             },
             errors=errors,
         )
