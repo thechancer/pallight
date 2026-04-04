@@ -323,6 +323,9 @@ _HA_HUE_TO_DEVICE: list[int] = [
 
 def ha_hue_to_device(ha_hue: float) -> int:
     """
+    Colour mapping problems persist. Redid full clock, degrees, mapping to hue, hex and RGB.
+    AI analysis of colours based off screengrab from app. Converted to colour match.
+    
     Convert HA hue (0.0–360.0°) to device wheel byte (0x00–0xFF).
 
     Uses the same HUE_TO_CANVAS lookup table as the Lovelace card so the
@@ -367,7 +370,7 @@ def ha_hue_to_device(ha_hue: float) -> int:
       11:00   HA 280.0°  0xD0  PURPLE
       11:30   HA 260.0°  0xD9  PURPLE/VIOLET
 
-    Calibrated from live device observations (March 2026) and validated
+    Calibrated from device observations (March 2026) and validated
     against the PAL_R/G/B colour tables in pallight-card.js.
 
     Validated colour wheel — half-hour clock positions (clockwise from 12):
