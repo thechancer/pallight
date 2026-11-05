@@ -240,10 +240,10 @@ class PalLightEntity(CoordinatorEntity[PalLightCoordinator], LightEntity, Restor
                     self._brightness = int(attrs[RESTORE_BRIGHTNESS])
                 if RESTORE_HUE in attrs:
                     self._hue = float(attrs[RESTORE_HUE])
-            if RESTORE_EFFECT in attrs and attrs[RESTORE_EFFECT] is not None:
-                self._effect = str(attrs[RESTORE_EFFECT])
-            if RESTORE_EFFECT_SPEED in attrs:
-                self._effect_speed = int(attrs[RESTORE_EFFECT_SPEED])
+                if RESTORE_EFFECT in attrs and attrs[RESTORE_EFFECT] is not None:
+                    self._effect = str(attrs[RESTORE_EFFECT])
+                if RESTORE_EFFECT_SPEED in attrs:
+                    self._effect_speed = int(attrs[RESTORE_EFFECT_SPEED])
             _LOGGER.debug(
                 "PalLight [%s] restored — on=%s bright=%s hue=%.1f° effect=%s speed=0x%04X",
                 self._mac, self._is_on, self._brightness, self._hue,
