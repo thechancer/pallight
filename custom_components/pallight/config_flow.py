@@ -133,7 +133,7 @@ class PalLightConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                         self._discovered = devices
                         return await self.async_step_pick_device()
                 else:
-                    errors["base"] = "no_devices_found"
+                    return await self.async_step_manual()
 
         interface_choices = await self._get_interface_choices()
 
